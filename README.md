@@ -1,80 +1,225 @@
-# Desafio Super Trunfo - Países - Cadastro das Cartas
+# 🃏 Super Trunfo — Países em C
 
-Bem-vindo ao desafio "Super Trunfo - Países"! No jogo Super Trunfo, os jogadores comparam as propriedades das cartas para determinar a mais forte. O tema deste Super Trunfo é "Países," onde você comparará as propriedades das cidades.
+Projeto desenvolvido em **Linguagem C** como atividade prática de programação, utilizando o conceito do jogo **Super Trunfo** para cadastrar, calcular e comparar informações de cidades.
 
-A empresa MateCheck contratou você para desenvolver a parte inicial do jogo, que consiste no cadastro das cartas.
-
-O desafio está dividido em três níveis: Novato, Aventureiro e Mestre, com cada nível adicionando mais complexidade ao anterior. Você deve escolher qual desafio quer realizar.
-
-### 🚨 Atenção: 
-O nível Novato do desafio é focado apenas no cadastro das cartas, utilizando as funções scanf para ler os dados e printf para exibi-los.
-
-## 🎮 Nível Novato
-
-No nível Novato, você iniciará criando o sistema básico do jogo Super Trunfo com o tema "Países". As cartas serão divididas por estados, cada um com quatro cidades. 
-
-Cada país será dividido em oito estados, identificados pelas letras de A a H. Cada estado terá quatro cidades, numeradas de 1 a 4. A combinação da letra do estado e o número da cidade define o código da carta (por exemplo, A01, A02, B01, B02).
-
-### 🚩 Objetivo:
-- Criar cartas representando cidades, contendo as seguintes propriedades:
-  - **População**
-  - **Área**
-  - **PIB**
-  - **Número de pontos turísticos**
-  
-### ⚙️ Funcionalidades do Sistema:
-- O sistema permitirá ao usuário cadastrar cartas de cidades, inserindo manualmente os dados via terminal de comando.
-- Após o cadastro, o sistema exibirá os dados de cada cidade de forma clara e organizada.
-
-### 📥 Entrada e 📤 Saída de Dados:
-- O usuário insere os dados de cada carta interativamente.
-- Após o cadastro, os dados são exibidos com todas as propriedades da cidade, uma por linha.
+O objetivo do projeto é aplicar fundamentos importantes da linguagem C por meio de um programa executado no terminal.
 
 ---
 
-## 🛡️ Nível Aventureiro
+## 📌 Sobre o projeto
 
-No nível Aventureiro, você expandirá o sistema para incluir propriedades calculadas, permitindo uma análise mais detalhada das cartas.
+O programa permite cadastrar informações de duas cartas representando cidades e realizar cálculos e comparações entre seus atributos.
 
-### 🆕 Diferença em relação ao Nível Novato:
-- **Novas Propriedades Calculadas:**
-  - **Densidade Populacional:** População dividida pela área da cidade.
-  - **PIB per Capita:** PIB total dividido pela população.
+Cada carta possui informações como:
 
-### ⚙️ Funcionalidades do Sistema:
-- O sistema agora calculará automaticamente a Densidade Populacional e o PIB per Capita com base nos dados inseridos.
-- Essas novas propriedades serão adicionadas às informações exibidas para cada cidade.
+- Estado;
+- Código da carta;
+- Nome da cidade;
+- População;
+- Área;
+- PIB;
+- Quantidade de pontos turísticos.
 
-### 📥 Entrada e 📤 Saída de Dados:
-- O usuário continua inserindo os dados de cada carta interativamente.
-- O sistema exibirá os dados, incluindo as novas propriedades calculadas, de forma clara e organizada.
-
----
-
-## 🏆 Nível Mestre
-
-No nível Mestre, você implementará comparações entre as cartas, utilizando operadores relacionais e manipulando grandes números com precisão.
-
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Comparação de Cartas:**
-  - O sistema permitirá ao usuário comparar duas cartas com base nas propriedades inseridas e calculadas.
-  - Cada carta terá um "Super Poder", que é a soma de todas as propriedades.
-  
-### ⚙️ Funcionalidades do Sistema:
-- O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades comparadas.
-- A comparação considerará:
-  - **Densidade Populacional:** Vence a carta com menor valor.
-  - **Outras Propriedades:** Vence a carta com maior valor.
-- O resultado das comparações será exibido claramente para cada propriedade.
-
-### 📥 Entrada e 📤 Saída de Dados:
-- O usuário insere as cartas a serem comparadas.
-- O sistema exibe os resultados das comparações, indicando a carta vencedora para cada propriedade.
+Além dos dados informados pelo usuário, o programa calcula automaticamente outros atributos importantes.
 
 ---
 
-Ao concluir todos os níveis, você terá criado um sistema incial para o jogo Super Trunfo, com funcionalidades de cadastro, cálculo e comparação de propriedades. 
+## ⚙️ Funcionalidades
 
-Boa sorte e divirta-se programando!
+O projeto permite:
 
-Equipe de Ensino - MateCheck
+- cadastrar duas cartas;
+- receber os dados das cidades pelo terminal;
+- calcular a densidade populacional;
+- calcular o PIB per capita;
+- calcular o chamado **Super Poder** da carta;
+- comparar diferentes atributos das duas cartas;
+- informar qual carta venceu cada comparação;
+- permitir ao usuário selecionar atributos para realizar uma comparação.
+
+---
+
+## 🧠 Conceitos praticados
+
+Durante o desenvolvimento deste projeto foram utilizados conceitos fundamentais da Linguagem C, como:
+
+- declaração de variáveis;
+- tipos de dados;
+- entrada de dados com `scanf`;
+- saída de dados com `printf`;
+- operadores aritméticos;
+- operadores relacionais;
+- estruturas condicionais;
+- cálculos matemáticos;
+- comparação de valores;
+- manipulação de strings;
+- organização da lógica de um programa.
+
+---
+
+## 📊 Dados utilizados nas cartas
+
+Cada carta possui os seguintes atributos:
+
+| Atributo | Descrição |
+|---|---|
+| Estado | UF informada pelo usuário |
+| Código | Identificação da carta |
+| Cidade | Nome da cidade |
+| População | Número de habitantes |
+| Área | Área territorial em km² |
+| PIB | Produto Interno Bruto da cidade |
+| Pontos turísticos | Quantidade de pontos turísticos |
+| Densidade populacional | População dividida pela área |
+| PIB per capita | PIB dividido pela população |
+| Super Poder | Valor calculado utilizando os atributos da carta |
+
+---
+
+## 🎮 Como funciona
+
+Ao executar o programa, o usuário informa os dados da **Carta 1** e da **Carta 2**.
+
+Exemplo:
+
+```text
+Carta 1
+
+Digite a UF do Estado:
+GO
+
+Digite o Codigo da Carta:
+A01
+
+Digite o Nome da Cidade:
+Goiania
+
+Digite o numero de habitantes:
+1437000
+```
+
+Após o cadastro, o programa realiza os cálculos necessários e apresenta as informações das cartas.
+
+Em seguida, os atributos podem ser comparados para determinar qual carta apresenta o melhor resultado em cada categoria.
+
+---
+
+## ⚔️ Comparação das cartas
+
+O programa realiza comparações utilizando atributos como:
+
+- População;
+- Área;
+- PIB;
+- Pontos turísticos;
+- Densidade populacional;
+- PIB per capita;
+- Super Poder.
+
+Na maioria dos atributos, vence a carta que possuir o **maior valor**.
+
+Na densidade populacional, a lógica de comparação considera a regra específica utilizada no projeto.
+
+---
+
+## 🧮 Cálculos realizados
+
+### Densidade Populacional
+
+A densidade populacional é calculada utilizando:
+
+```text
+Densidade Populacional = População / Área
+```
+
+---
+
+### PIB per Capita
+
+O PIB per capita é calculado dividindo o PIB pela população:
+
+```text
+PIB per Capita = PIB / População
+```
+
+---
+
+### Super Poder
+
+O projeto também calcula um atributo chamado **Super Poder**, utilizando diferentes informações da carta para gerar um valor utilizado nas comparações.
+
+---
+
+## ▶️ Como executar
+
+Para executar o projeto é necessário possuir um compilador C, como o **GCC**.
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/WillianSaraiva/cadastro-cartas-williansg07.git
+```
+
+### 2. Entre na pasta do projeto
+
+```bash
+cd cadastro-cartas-williansg07
+```
+
+### 3. Compile o arquivo
+
+```bash
+gcc CartasSuperTrunfo.c -o CartasSuperTrunfo
+```
+
+### 4. Execute
+
+No Windows:
+
+```bash
+CartasSuperTrunfo.exe
+```
+
+No Linux/macOS:
+
+```bash
+./CartasSuperTrunfo
+```
+
+---
+
+## 🛠️ Tecnologia utilizada
+
+![C](https://img.shields.io/badge/C-Language-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+
+---
+
+## 🎓 Contexto acadêmico
+
+Este projeto foi desenvolvido como parte dos meus estudos em programação durante o curso de **Análise e Desenvolvimento de Sistemas**.
+
+O objetivo principal é colocar em prática os fundamentos estudados e acompanhar minha evolução no desenvolvimento de software.
+
+---
+
+## 🚀 Próximos aprendizados
+
+Conforme avanço nos estudos, pretendo continuar desenvolvendo projetos que permitam praticar:
+
+- funções;
+- estruturas;
+- vetores;
+- manipulação de arquivos;
+- modularização de código;
+- estruturas de dados;
+- organização de projetos maiores.
+
+---
+
+## 👨‍💻 Autor
+
+**Willian Saraiva**
+
+Estudante de Análise e Desenvolvimento de Sistemas.
+
+[![GitHub](https://img.shields.io/badge/GitHub-WillianSaraiva-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/WillianSaraiva)
